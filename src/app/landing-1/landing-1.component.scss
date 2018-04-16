@@ -1,0 +1,23 @@
+@import '../../scss/vars';
+
+.wrapper {
+	.section-1{
+		position: relative;
+		padding-top: 60px;
+		min-height: 100vh;
+		background: url(/assets/img/earth-bg.jpg) center center no-repeat;
+		background-size: cover;
+		.overlay {
+			position: absolute;
+			top: 0; 
+			right: 0; 
+			bottom: 0;
+			left: 0;
+			background: $gnome-black;
+			opacity: 0.7;
+		}
+		.content {
+			
+		}
+	}
+}

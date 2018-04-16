@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:300,400,700);
+@import './vars';
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: white;
+	background-color: $gnome-black;
+	font-family: 'lato', sans-serif;
+}

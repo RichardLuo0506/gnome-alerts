@@ -1,0 +1,50 @@
+@import '../../scss/vars';
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 100;
+	height: 100px;
+	padding: 0 $gutter;
+
+	.branding {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		font-size: 20px;
+		a {
+			text-decoration: none;
+			color: white;
+		}
+	}
+	.nav-links {
+		.nav-link {
+			text-decoration: none;
+			color: rgba(255, 255, 255, 0.8);
+			font-weight: 300;
+			padding: 20px 0;
+			margin: 0 10px;
+			&.active {
+				border-bottom: 1px solid $gnome-green;
+			}
+		}
+		.login-btn {
+			display: inline-block;
+			margin-left: 20px;
+			padding: 10px 24px;
+			border-radius: 2px;
+			border: 1px solid #4d4f5a;
+			background: #313340;
+			transition: 200ms;
+			&:hover {
+				cursor: pointer;
+				background: $gnome-green;
+				border-color: $gnome-green;
+			}
+		}
+	}
+}
