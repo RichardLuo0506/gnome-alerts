@@ -1,0 +1,23 @@
+@import '../../scss/vars';
+
+footer {
+	border-top: 1px solid #30323f;
+	padding: 60px $gutter 30px;
+	.nav-links {
+		display: flex;
+		padding: 0 300px;
+		justify-content: space-between;
+		.nav-link {
+			font-size: 14px;
+			color: #7e8992;
+			text-decoration: none;
+		}
+	}
+	.copyright {
+		margin-top: 30px;
+		text-align: center;
+		color: #7e8992;
+		font-size: 12px;
+		font-weight: 300;
+	}
+}

@@ -36,9 +36,9 @@
 			display: inline-block;
 			margin-left: 20px;
 			padding: 10px 24px;
-			border-radius: 2px;
+			border-radius: 3px;
 			border: 1px solid #4d4f5a;
-			background: #313340;
+			background: rgba(33, 35, 50, 0.8);
 			transition: 200ms;
 			&:hover {
 				cursor: pointer;

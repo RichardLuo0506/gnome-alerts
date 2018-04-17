@@ -1,6 +1,62 @@
 @import '../../scss/vars';
 
 .wrapper {
+	section {
+		padding: 100px $gutter;
+		header {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 40px;
+			text-align: center;
+			margin-bottom: 80px;
+		}
+		.price-cards {
+			display: flex;
+			justify-content: space-between;
+			.pricing-card {
+				flex: 0 0 28%;
+				padding: 30px;
+				&:hover {
+					box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+				}
+				span.line {
+					display: inline-block;
+					width: 40px;
+					height: 2px;
+					background: #fcdf9c;
+					border-radius: 20px;
+					&.blue {
+						background: #0289f5;
+					}
+					&.red {
+						background: #ff6480;
+					}
+				}
+				h3 {
+					font-size: 20px;
+					margin: 30px 0;
+				}
+				p {
+					font-size: 14px;
+					line-height: 1.6;
+					font-weight: 300;
+					color: rgba(255, 255, 255, 0.7);
+				}
+				.buy-btn {
+					float: right;
+					padding: 15px 20px;
+					text-align: right;
+					border: 1px solid #fcdf9c;
+					border-radius: 3px;
+					&.blue {
+						border-color: #0289f5;
+					}
+					&.red {
+						border-color: #ff6480;
+					}
+				}
+			}
+		}
+	}
 	.section-1{
 		position: relative;
 		padding-top: 60px;
@@ -17,7 +73,47 @@
 			opacity: 0.7;
 		}
 		.content {
-			
+			display: flex;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			flex-direction: column;
+			justify-content: center;
+			padding: 0 $gutter;
+			h1 {
+				font-size: 60px;
+				margin: 0;
+			}
+			h2 {
+				color: #d0d0d3;
+				margin-top: 40px;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 28px;
+				width: 40%;
+			}
+			.cta-btns {
+				margin-top: 60px;
+				.cta-btn {
+					display: inline-flex;
+					justify-content: center;
+					align-items: center;
+					color: white;
+					background: rgba(33, 35, 50, 0.8);
+					text-decoration: none;
+					border-radius: 3px;
+					border: 1px solid #4d4f5a;
+					padding: 10px 30px;
+					margin-right: 10px;
+					font-weight: 300;
+					.icon {
+						height: 20px;
+						margin-right: 10px;
+					}
+				}
+			}
 		}
 	}
 }
